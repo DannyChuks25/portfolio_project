@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@layer utilities{
+ .bg-colors{
+  background-image: linear-gradient(240deg,hsl(283, 95%, 26%),hsl(283, 81%, 29%),hsl(283, 68%, 32%),hsl(283, 35%, 40%),hsl(283, 89%, 74%),hsl(283, 91%, 86%),hsl(282, 63%, 97%));
+ }}
+ 
+
+body{
+  background-color: black;
+  height: 100vh;
+}
+.navbar{
+  border-bottom: 1px solid darkgray;
+}
+.photo{
+  filter: drop-shadow(0 0 1em rgb(247, 173, 247));
+}
+.photo:hover {
+  filter: drop-shadow(0 0 2em rgb(247, 173, 247));
+}
+.error{
+  color: red;
+  font-size: 0.8rem;
+}
+.ctc-ctn{
+  margin-bottom: 20px;
+}
+
+@media (max-width:430px) {
+  .todo-body{
+    padding: 0 20px;
+  }
+  button{
+    width: 240px;
+  }
+}
