@@ -44,8 +44,8 @@ const Todo = () => {
           <ul>
             {
               todoList.map((item, num) => (
-                 <li className="border-2 border-purple-500  cursor-pointer px-2 py-2 bg-[#75428a] mb-3 hover:bg-purple-700 flex justify-between items-center">
-                  <span>sdm nc</span>
+                 <li key={num} className="border-2 border-purple-500  cursor-pointer px-2 py-2 bg-[#75428a] mb-3 hover:bg-purple-700 flex justify-between items-center">
+                  <span>{item}</span>
                   <FaTrash className='delIcon' onClick={() => handleDelete(num)} />
                 </li>
               ))
