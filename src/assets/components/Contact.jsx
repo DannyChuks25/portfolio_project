@@ -30,13 +30,15 @@ const Contact = () => {
   }
   const contactRunCheck = () => {
     const contactErrLog = {};
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (!contactInput.fname) {
       contactErrLog.fname = "First name is Required";
     }
-    if (!contactInput.email) {
+    if (!contactInput.email || !emailRegex.test(contactInput.email)) {
       contactErrLog.email = "Email is Required";
     }
+    
     if (!contactInput.message) {
       contactErrLog.message = "Message is Required";
     }
@@ -133,7 +135,7 @@ const Contact = () => {
                 }
               </div>
               <div>
-                <button className='bg-purple-600 text-white text-[1rem] border-0 rounded-full px-4 py-2 transition-all duration-300 hover:bg-purple-700 cursor-pointer'>Submit Meesage</button>
+                <button className='bg-purple-600 text-white text-[1rem] border-0 rounded-full px-4 py-2 transition-all duration-300 hover:bg-purple-700 cursor-pointer'>Submit Message</button>
               </div>
             </form>
           </div>

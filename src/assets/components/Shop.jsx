@@ -58,6 +58,7 @@ const Shop = () => {
               price: "",
               desc: "",
           })
+          setshopError({})
           console.log(allProducts)
           setShowForm(false);
           setshowBtn(!showBtn);
@@ -141,7 +142,7 @@ const Shop = () => {
                     <h3 className="prodTitle font-bold text-xl mt-2">{prod.title}</h3>
                     <div className="side mt-[10px] mb-[20px] flex justify-between items-center">
                       <p>N{prod.price}</p>
-                      <button className='p-2 bg-purple-600 text-white text-[1rem] border-0 rounded-full transition-all duration-300 hover:bg-purple-700 text-sm'>
+                      <button className='p-2 bg-purple-600 text-white text-[1rem] border-0 rounded-full transition-all duration-300 hover:bg-purple-700 text-sm cursor-pointer'>
                         Add to Cart
                       </button>
                     </div>
