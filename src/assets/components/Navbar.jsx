@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='bg-black h-20 px-4 py-4 flex mx-auto md:flex justify-between items-center navbar'>
+      <div className='sticky left-0 top-0 bg-black h-20 md:w-[800px] lg:w-[1000px] px-4 py-4 flex mx-auto md:flex justify-between items-center navbar'>
         <div className='text-xl md:text-2xl'>
             <span className='text-purple-200'>Dan</span>
             <span className='text-purple-500'>Portfolio</span>

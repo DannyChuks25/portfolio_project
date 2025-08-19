@@ -6,8 +6,8 @@ const Hero = () => {
   // const navigate = useNavigate();
 
   return (
-    <div>
-      <div id='home' className='text-white h-[85vh] md:flex flex-row-reverse justify-around'>
+    <div className='flex justify-center items-center'>
+      <div id='home' className='text-white h-[85vh] lg:border-red-500 xl:w-[1000px] md:mt-[20px] md:flex flex-row-reverse md:gap-x-[130px] justify-around'>
         <div className="img-container size-70 md:size-100 flex mx-auto md:mx-0 cursor-pointer">
             <img src={photo} alt="" className='photo transition-all duration-300' />
         </div>

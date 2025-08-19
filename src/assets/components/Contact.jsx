@@ -79,15 +79,15 @@ const Contact = () => {
 
 
   return (
-    <div>
-      <div className="text-white">
+    <div className='flex items-center justify-center mt-4'>
+      <div className="text-white md:w-[800px] lg:w-[1000px] xl:w-[1400px xl:mx-[170px]">
         <div className='mt-6 text-center'>
           <h1 className='text-2xl lg:text-3xl bg-gradient-to-r from-purple-200 to-purple-900 bg-clip-text text-transparent'>Get In Touch With Me</h1>
           <p className='mt-3'>Contact me today, let's build something great</p>
         </div>
 
         <div className='row flex justify-center gap-y-6 flex-col md:flex-row mt-[50px]'>
-          <div className="col w-full text-center md:text-left md:pl-6 lg:pl-16 xl:pl-30">
+          <div className="col w-full text-center md:ml-5 md:text-left lg:pl-16">
             {
               contacts.map(({ id, icon, head, text }) => (
                 <div className='flexme  mb-4 flex flex-col md:flex-row md:items-center' key={id}>
@@ -101,7 +101,7 @@ const Contact = () => {
             }
           </div>
 
-          <div className="col w-full md:pr-6">
+          <div className="col w-full md:pr-6 border-red-500">
             <form onSubmit={contactSubmit} className='text-left max-w-[400px] mx-auto'>
               <div className='ctc-ctn'>
                 <input type="text" placeholder='Full Name' className='border-1 outline-0 px-2 py-2 w-full '
