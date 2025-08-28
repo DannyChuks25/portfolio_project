@@ -5,6 +5,7 @@ import Layout from './assets/components/Layout'
 import Todo from './assets/components/Todo'
 import Shop from './assets/components/Shop'
 import Contact from './assets/components/Contact'
+import About from './assets/components/About'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route path='todo' element={<Todo />}/>
               <Route path='shop' element={<Shop />}/>
               <Route path='contact' element={<Contact />}/>
+              <Route path='about' element={<About />}/>
             </Route>
         </Routes>
        

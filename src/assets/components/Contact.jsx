@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom'
 
 const Contact = () => {
   const contacts = [
-    { id: 1, icon: <FaPhone /> , head: "Call Me", text: "+234 907 5802" },
+    { id: 1, icon: <FaPhone /> , head: "Call Me", text: "+234 907 497 5802" },
     { id: 2, icon: <FaEnvelope /> , head: "Email", text: "danielchukwu2004@gmail.com" },
-    { id: 3, icon: <FaMapMarkerAlt /> , head: "Address", text: "No. 4, Kusela Estate, Ologuneru, Ibadan" }
+    { id: 3, icon: <FaMapMarkerAlt /> , head: "Address", text: "No. 5, Kusela Estate, Ologuneru, Ibadan" }
   ]
 
   const navigate = useNavigate();
@@ -79,8 +79,8 @@ const Contact = () => {
 
 
   return (
-    <div className='flex items-center justify-center mt-4'>
-      <div className="text-white md:w-[800px] lg:w-[1000px] xl:w-[1400px xl:mx-[170px]">
+    <div className='flex items-center justify-center mt-4 mb-32'>
+      <div className="text-white h-[87vh] md:w-[800px] lg:w-[1000px] xl:w-[1400px xl:mx-[170px]">
         <div className='mt-6 text-center'>
           <h1 className='text-2xl lg:text-3xl bg-gradient-to-r from-purple-200 to-purple-900 bg-clip-text text-transparent'>Get In Touch With Me</h1>
           <p className='mt-3'>Contact me today, let's build something great</p>
@@ -101,7 +101,7 @@ const Contact = () => {
             }
           </div>
 
-          <div className="col w-full md:pr-6 border-red-500">
+          <div className="col w-full md:pr-6">
             <form onSubmit={contactSubmit} className='text-left max-w-[400px] mx-auto'>
               <div className='ctc-ctn'>
                 <input type="text" placeholder='Full Name' className='border-1 outline-0 px-2 py-2 w-full '

@@ -8,6 +8,7 @@
 body{
   background-color: black;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 .navbar{
   border-bottom: 1px solid darkgray;
@@ -24,6 +25,10 @@ body{
 }
 .ctc-ctn{
   margin-bottom: 20px;
+}
+.skill-img img{
+  width: 100px;
+  border-radius: 20%;
 }
 
 @media (max-width:430px) {

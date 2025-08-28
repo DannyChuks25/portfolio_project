@@ -24,11 +24,11 @@ const Todo = () => {
     <div className='todo-body'>
       <div
         id="todo"
-        className="text-white md:mt-[40px] full mx-auto p-5 shadow-purple-300 h-[400px] max-w-[400px]
+        className="text-white  md:mt-[40px] mt-[40px] mb-[40px] full mx-auto p-5 shadow-purple-300 h-[400px] max-w-[400px]
         bg-[linear-gradient(240deg,hsl(283,95%,26%),hsl(283,81%,29%),hsl(283,68%,32%),hsl(283,35%,40%),hsl(283,89%,74%),hsl(283,91%,86%),hsl(282,63%,97%))]"
       >
         <h1 className="text-center text-xl pb-4 font-bold">TODO LIST</h1>
-        <div className="text-white flex items-center justify-between border-0 bg-[#75428a] rounded-tr-xl rounded-br-xl">
+        <div className="text-white flex items-center justify-between border-0 bg-[#75428a] rounded-tr-xl rounded-br-xl mb-7">
           <input
             className="text-lg md:text-xl w-full px-3 outline-0"
             type="text"

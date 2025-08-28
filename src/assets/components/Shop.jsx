@@ -74,11 +74,11 @@ const Shop = () => {
 
   return (
     <div>
-      <div id='shop' className="text-white flex flex-col text-center items-center justify-center">
+      <div id='shop' className="text-white h-[87vh]  flex flex-col text-center items-center justify-center">
         {
           allProducts.length === 0 &&
           <div className='empty'>
-            <h1 className='text-2xl md:text-4xl font-bold mb-4 mt-[200px]'>Ooops!! Cart is Empty.</h1>
+            <h1 className='text-2xl md:text-4xl font-bold mb-4 mt-[100px]'>Ooops!! Cart is Empty.</h1>
           </div>
         }
         <div className='mt-4'>

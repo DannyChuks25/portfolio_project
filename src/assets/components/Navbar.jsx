@@ -12,15 +12,18 @@ const Navbar = () => {
         {id: 1, text: "Home", to: "/"},
         {id: 2, text: "TodoList", to: "/todo"},
         {id: 3, text: "Shop", to: "/shop"},
-        {id: 4, text: "Contact", to: "/contact"}
+        {id: 4, text: "Contact", to: "/contact"},
+        {id: 5, text: "About", to: "/about"},
     ]
 
   return (
-    <div>
-      <div className='sticky left-0 top-0 bg-black h-20 md:w-[800px] lg:w-[1000px] px-4 py-4 flex mx-auto md:flex justify-between items-center navbar'>
+    <>
+      <div className='sticky left-0 top-0 z-10 bg-black h-20 md:w-[800px] lg:w-[1000px] px-4 py-4 flex mx-auto md:flex justify-between items-center navbar'>
         <div className='text-xl md:text-2xl'>
-            <span className='text-purple-200'>Dan</span>
-            <span className='text-purple-500'>Portfolio</span>
+            <Link to="/">
+                <span className='text-purple-200'>Dan</span>
+                <span className='text-purple-500'>Portfolio</span>
+            </Link>
         </div>
 
         <div>
@@ -78,7 +81,7 @@ const Navbar = () => {
         </div>
         }
       </div>
-    </div>
+    </>
   )
 }
 
